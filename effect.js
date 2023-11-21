@@ -1,5 +1,6 @@
 $(window).load(function(){
 	$('.loading').fadeOut('fast');
+	$('.dieu-uoc-beiu').fadeOut('fast');
 	$('.container').fadeIn('fast');
 });
 $('document').ready(function(){
@@ -139,21 +140,22 @@ $('document').ready(function(){
 	});
 
 	
-       $('#thoi_nen').click(function(){
+        $('#thoi_nen').click(function(){
 		$(this).fadeOut('slow');
 		$('.fuego').fadeOut('fast').delay(4000).promise().done(function(){
-			$('#wish_message').fadeIn('slow');
+			$('#cmsn_dieuuoc').fadeIn('slow');
 
 	         });
 	});
 
-	/* $('#thoi_nen').click(function(){
-		$('.fuego').hide();
-		$('.cake').fadeIn('slow');
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
-			$('#wish_message').fadeIn('slow');
-		});
-	}); */
+	$('#cmsn_dieuuoc').click(function(){   
+		$('.dieu-uoc-beiu').fadeIn('slow');
+		$('#cmsn_dieuuoc').fadeOut('fast');
+		$('.cake').fadeOut('fast').delay(4000).promise().done(function(){
+		$('#wish_message').fadeIn('slow');
+
+	         });
+	});
 
 		
 	$('#wish_message').click(function(){
